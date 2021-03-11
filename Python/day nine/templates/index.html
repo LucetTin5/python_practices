@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet">
+    </link>
+    <style>
+        h1 {
+            color: plum;
+        }
+
+        #searchingSelect {
+            color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="bgtitle">
+        <h1>
+            Hacker News Crawler
+        </h1>
+    </header>
+    <div id="searchingSelect">
+        <center>
+            Order by :
+            <strong>
+                Popular
+                |
+                New
+            </strong>
+        </center>
+    </div>
+    <main>
+        <table id="contents">
+            {% for data in data_list %}
+            <tr>
+                <td>title (url)</td>
+                <td>point "points" | "By :" author | comments "comments"</td>
+            </tr>
+            {% end for %}
+        </table>
+    </main>
+</body>
+
+</html>

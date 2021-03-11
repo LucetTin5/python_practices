@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+  <style>
+    div.title_info {
+      font-size:large;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <center>
+      <h1 class="title">
+        Reddit Reader
+      </h1>
+      <div class="title_info">
+
+      </div>
+    </center>
+  </header>
+  <main>
+    <table>
+      <tr><strong>Select the subreddits you're interested on:</strong></tr>
+      {% for subreddit in subreddits %}
+        &middot; <button></button> {{subreddit}}
+      {% endfor%}
+
+    </table>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet">
+  </link>
+</head>
+
+<body>
+  <header>
+    <center>
+      <h1 id="title">
+        <a href="home.html">
+          Reddit Reader
+        </a>
+      </h1>
+      <div id="reading">
+        <strong>
+          Reading :
+          {% for reddit in reading %}
+          r/{{reddit}}
+          {% endfor%}
+        </strong>
+      </div>
+    </center>
+  </header>
+  <main>
+
+  </main>
+</body>
+
+</html>
